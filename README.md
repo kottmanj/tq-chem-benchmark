@@ -40,7 +40,7 @@ UX = tq.compile(U, backend="qiskit").circuit
 U_pl = qml.load(UX, format='qiskit')
 ```
 
-See [tq2pl.py](tq2pl.py) for a small test and the "SPA/MRA-PNO (tequila + pennylane - default.qubit)" points in the plot above.  
+See [tqXpl.py](tqXpl.py) for a small test and the "SPA/MRA-PNO (tequila + pennylane - default.qubit)" points in the plot above.  
 
 ## Be a little bit faster
 For some reason having jax and jaxlib installed slows tequila down. This can be exploited by uninstalling them and installing autograd.  
