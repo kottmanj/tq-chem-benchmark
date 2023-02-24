@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+time={}
 time[2]=6.894924640655518
 time[4]=15.806959867477417
 time[6]=30.05142831802368
