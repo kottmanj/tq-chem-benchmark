@@ -29,8 +29,8 @@ Pennylane timings (see [pl.py](pl.py)) are included as a representative for stat
 The code is taken from the [documentation](https://docs.pennylane.ai/en/stable/code/api/pennylane.kUpCCGSD.html) and only modified slightly to allow for different molecules and devices. `device=default.qubit` was here the default and is also the fastest for the task.
 
 Possible way to speed-up the walltime:  
-- Use the same optimizer as in the tq defaults (scipy implementation of BFGS with default values)  
-- Exploit MRA-PNOs and SPA ansatz from [spa_tq.py](spa_tq.py) (can be imported from tequila)
+1. Use the same optimizer as in the tq defaults (scipy implementation of BFGS with default values)  
+2. Exploit MRA-PNOs and SPA ansatz from [spa_tq.py](spa_tq.py) (can be imported from tequila)
 
 ```python
 # convert tequila hamiltonian to pennylane hamiltonian
@@ -39,3 +39,19 @@ H_pl = qml.load_operator(H.to_openfermion())
 UX = tq.compile(U, backend="qiskit").circuit
 U_pl = qml.load(UX, format='qiskit')
 ```
+
+See [tq2pl.py](tq2pl.py) for a small test and the "SPA/MRA-PNO (tequila + pennylane - default.qubit)" points in the plot above.  
+
+## Be a little bit faster
+For some reason having jax and jaxlib installed slows tequila down. This can be exploited by uninstalling them and installing autograd.  
+```bash
+pip uninstall jax jaxlib
+pip install autograd
+```
+This restricts the functionality a bit, but for VQEs one usuall does not notice it (here jax/autograd are basically doing nothing, as tequila uses shift-rules for the circuits and we have only trivial classical transformations of the expectation values).  
+In the following plot you can see what to expect:
+
+<img src="benchmark2.png" width=500>
+
+for the last point this is almost a factor of 2, so this tweak might pay-off for larger systems.
+
