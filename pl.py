@@ -59,7 +59,6 @@ for n_atoms in [2,4,6,8]:
         conv = np.abs(energy[-1] - prev_energy)
         print(f"Step = {n},  Energy = {energy[-1]:.8f} Ha")
         print("so far: ", time.time()-start)
-        sys.stdout.flush()
         if conv <= conv_tol:
             break
     
