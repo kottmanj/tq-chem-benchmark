@@ -1,8 +1,7 @@
 import tequila as tq
 import time
 
-for n in range(1,11):
-    n = 2*n
+for n in range(23):
     start = time.time()
     d = 1.5
     geometry = ""

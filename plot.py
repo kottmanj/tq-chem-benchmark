@@ -15,6 +15,18 @@ time[22]=2212.8264150619507
 plt.plot(list(time.keys()),list(time.values()), label="SPA/MRA-PNO (tequila-qulacs)", marker="o", color="forestgreen")
 
 time={}
+time[2 ]= 6.846760511398315
+time[4 ]= 16.180283784866333
+time[6 ]= 29.87969422340393
+time[8 ]= 54.55028057098389
+time[10]=  81.49311137199402
+time[12]=  118.29949522018433
+time[14]=  199.13677406311035
+time[16]=  402.28967237472534
+time[18]=  1522.5977501869202
+plt.plot(list(time.keys()),list(time.values()), label="SPA/MRA-PNO (tequila + penylane-default.qubit)", marker="x", linestyle="dashed", color="forestgreen")
+
+time={}
 time[2]=6.4
 time[4]=17.9
 time[6]=57.03
@@ -28,7 +40,6 @@ time[4]=2.937643051147461
 time[6]=54.78564476966858
 time[8]=865.6871042251587
 plt.plot(list(time.keys()),list(time.values()), label="UpCCGSD/STO-3G (tequila-qulacs)", marker="o", color="navy")
-
 
 # pennylane with qulacs (12 threads)
 time={}
