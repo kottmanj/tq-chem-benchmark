@@ -1,7 +1,9 @@
 # Out-Of-The-Box VQEs
 
 A small benchmark showcasing an out-of-the-box VQE with methods implemented in [tequila](https://github.com/tequilahub/tequila).  
-**The scenario is: I want to run an electronic VQE, how far do I get without manually tweaking code or parameters.**
+**The scenario is: I want to run an electronic VQE, how far do I get without manually tweaking code or parameters.**  
+
+Note that this is not a propper benchmark. The intent is to provide some ballpark estimates on walltimes to expect with the displayed methods.  
 
 <img src="benchmark.png" width=500>
 Timings from Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz with Ubuntu.  
