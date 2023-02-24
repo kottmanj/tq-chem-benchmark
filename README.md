@@ -20,4 +20,4 @@ Timings from Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz with Ubuntu.
 - qubit count: qubits=2x(N-Electrons)
 
 ### UpCCGSD/STO-3G (Pennylane)
-Including Pennylane timings (see [pl.py](pl.py)) as a representative for industry standard state-of-the-art code.  
+Pennylane timings (see [pl.py](pl.py)) are included as a representative for state-of-the-art code with industry standard.  
