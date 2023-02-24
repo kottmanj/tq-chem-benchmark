@@ -1,3 +1,5 @@
+# Out-Of-The-Box VQEs
+
 A small benchmark showcasing an out-of-the-box VQE with methods implemented in [tequila](https://github.com/tequilahub/tequila).  
 **The scenario is: I want to run an electronic VQE, how far do I get without manually tweaking code or parameters.**
 
