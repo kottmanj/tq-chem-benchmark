@@ -1,0 +1,5 @@
+tequila-basic
+qulacs
+pennylane
+pennylane-qulacs
+pennylane-lightning
