@@ -22,7 +22,7 @@ Timings from Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz with Ubuntu.
 
 ### UpCCGSD/STO-3G (Pennylane)
 Pennylane timings (see [pl.py](pl.py)) are included as a representative for state-of-the-art code with industry standard.  
-The code is taken from the [documentation](https://docs.pennylane.ai/en/stable/code/api/pennylane.kUpCCGSD.html) and only modified slightly to allow for different molecules and devices. `device=default.qubit` was here the default and is also the fastest for the task (others are included to see that `qulacs` is not always fastest in all packages).    
+The code is taken from the [documentation](https://docs.pennylane.ai/en/stable/code/api/pennylane.kUpCCGSD.html) and only modified slightly to allow for different molecules and devices. `device=default.qubit` was here the default and is also the fastest for the task.
 
 Possible way to speed-up the walltime:  
 - Use the same optimizer as in the tq defaults (scipy implementation of BFGS with default values)  
