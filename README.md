@@ -54,5 +54,6 @@ In the following plot you can see what to expect:
 
 <img src="benchmark2.png" width=500>
 
-for the last point this is almost a factor of 2, so this tweak might pay-off for larger systems.
+for the last point the difference is already ~9 minutes vs ~15 minutes, which can make a real difference.  
+Note that on windows or osx-arm64 (with M1 or M2 processors) you need use autograd anyway.
 
