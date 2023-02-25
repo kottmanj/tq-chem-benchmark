@@ -3,8 +3,12 @@
 A small benchmark showcasing an out-of-the-box VQE with methods implemented in [tequila](https://github.com/tequilahub/tequila).  
 **The scenario is: I want to run an electronic VQE, how far do I get without manually tweaking code or parameters.**  
 
-Note that this is not a proper benchmark. The intent is to provide some ballpark estimates on walltimes to expect with the displayed methods.  
-Potential examples: Machine learning algorithms on circuits where this repo hopefully can provide some guidance in the chosing of the training data (method, basis, size). In this context the atempts of combining tequila with pennylane might be interesting as well (see below).   
+
+**Note that this is not a proper benchmark**.  
+The intent is to provide some ballpark estimates on walltimes to expect with the displayed methods.  
+
+
+Typical scenarios: Testing a new method against UpCCGSD or tryout machine learning algorithms on circuits. Here, this repo hopefully can provide some guidance in the chosing of the training data (method, basis, size). In this context the atempts of combining tequila with pennylane might be interesting as well (see below).   
 
 <img src="benchmark.png" width=500>
 Timings from Intel(R) Xeon(R) W-2135 CPU @ 3.70GHz with Ubuntu.  
