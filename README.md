@@ -35,7 +35,7 @@ Possible way to speed-up the walltime:
 ```python
 # convert tequila hamiltonian to pennylane hamiltonian
 H_pl = qml.load_operator(H.to_openfermion())
-# suggestion for the circuit (not sure if this works)
+# convert circuit via qiskit
 UX = tq.compile(U, backend="qiskit").circuit
 U_pl = qml.load(UX, format='qiskit')
 ```
